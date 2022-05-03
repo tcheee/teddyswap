@@ -92,7 +92,7 @@ describe('Exchange', () => {
 
       await exchange
         .connect(user)
-        .ethToTokenSwap(toWei(1.99), { value: toWei(1) });
+        .ethToTokenSwap(toWei(1.95), { value: toWei(1) });
 
       const userBalanceAfter = await getBalance(user.address);
       expect(fromWei(userBalanceAfter - userBalanceBefore)).to.equal(
