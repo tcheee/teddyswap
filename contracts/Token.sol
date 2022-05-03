@@ -1,8 +1,8 @@
-// contracts/Token.sol
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
+//For testing purpose
 contract Token is ERC20 {
   constructor(
     string memory name,
