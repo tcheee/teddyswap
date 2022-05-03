@@ -2,10 +2,6 @@ pragma solidity ^0.8.0;
 
 import "./Exchange.sol";
 
-interface IFactory {
-  function getExchange(address _tokenAddress) external returns (address);
-}
-
 contract Factory {
     mapping(address => address) public tokenToExchange;
 
